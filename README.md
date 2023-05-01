@@ -80,7 +80,7 @@ the difference to the starting balance.
 is YYYY-mm-dd 21.30. We need a way to group the transactions so that for each day, the transactions
 made before and after 21.30 fall into two seperate groups. To achieve that, we create a 
 `dummy_timestamp` which is a shifted version of the transaction timestamp. We calculate it by
-adding 1.5 hours to the `reference_timestamp`, which is the remaining time from 21.30 until 
+adding 2.5 hours to the `reference_timestamp`, which is the remaining time from 21.30 until 
 the next day. 
 * Create a null transaction for each missing day for `dummy_timestamp`.
 * Sum the transaction amounts per day and calculate the cumulative sum's average.
